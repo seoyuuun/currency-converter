@@ -1,0 +1,72 @@
+$color: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+h1,
+h5 {
+  color: $color;
+}
+
+.firstConverter {
+  h1 {
+    margin: 15px 0;
+  }
+  width: 300px;
+  height: 300px;
+
+  .converter-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 500;
+
+    .converter-country {
+      margin: 3px 0;
+    }
+
+    .converter-seletor {
+      margin: 3px 0;
+
+      .converter-seletor-option {
+        margin: auto 5px;
+      }
+    }
+
+    .converter-exchange-rate {
+      margin: 3px 0;
+    }
+
+    .converter-sending-wrapper {
+      margin: 3px 0;
+
+      .converter-sending {
+        width: 50%;
+        margin: auto 5px;
+        border: 1px solid lightgray;
+      }
+
+      .submit-button {
+        border: solid 1px rgb(182, 182, 182);
+        border-radius: 1px;
+        margin: 10px 5px;
+        padding: 5px 30px;
+        background: linear-gradient(rgb(218, 218, 218), white);
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .converter-total {
+    margin-top: 20px;
+  }
+}
