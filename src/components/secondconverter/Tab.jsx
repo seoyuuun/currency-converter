@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { optionObject } from './optionObject';
 import './Tab.scss';
+import Contents from './Contents';
 
 function Tab() {
   const [currentTab, setCurrentTab] = useState(0);
@@ -28,9 +29,10 @@ function Tab() {
           );
         })}
       </ul>
-      <div className="Desc">
+      {/* <div className="Desc">
         <p>{optionObject[currentTab].content}</p>
-      </div>
+      </div> */}
+      <Contents title={optionObject[currentTab].content}></Contents>
     </div>
   );
 }
