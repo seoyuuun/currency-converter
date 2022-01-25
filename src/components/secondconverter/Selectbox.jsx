@@ -1,9 +1,13 @@
 import React from 'react';
 import { optionObject } from './optionObject';
 
-function Selectbox() {
+function Selectbox({ handleKeyword }) {
+  const handleChange = (e) => {
+    handleKeyword(e.target.value);
+  };
+
   return (
-    <select>
+    <select onChange={handleChange}>
       {optionObject.map((object) => {
         return <option key={object.id}>{object.title}</option>;
       })}
