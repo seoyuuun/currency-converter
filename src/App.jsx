@@ -1,24 +1,9 @@
-// import logo from './logo.svg';
-import "./App.css";
+import React from "react";
+import FirstConverter from "./pages/FirstConverter";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // eslint-disable-next-line react/jsx-no-useless-fragment
+  return <FirstConverter />;
 }
 
 export default App;
