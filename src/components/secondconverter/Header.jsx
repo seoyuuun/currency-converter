@@ -1,42 +1,23 @@
-import React from "react";
-// import style from "scss";
+import React, { useState } from 'react';
+import Selectbox from './Selectbox';
+import './Header.scss';
+import { inputComma } from '../../utils/comma';
 
-function Input() {
+const Header = () => {
+  const [price, setPrice] = useState(0);
+
   return (
-    <div>
-      <input placeholder="" />
-    </div>
-  );
-}
-
-const OPTIONS = [
-  { value: "USA", title: "USD" },
-  { value: "CANADA", title: "CAD" },
-  { value: "KOREA", title: "KRW" },
-  { value: "HONGKONG", title: "HKD" },
-  { value: "JAPAN", title: "JPY" },
-  { value: "CHINA", title: "CHNY" },
-];
-
-function Select(props) {
-  return (
-    <select>
-      {props.options.map((option => (
-        <option key={option.value} value={option.value}>
-          {option.title}
-        </option>
-      ))}
-    </select>
+    <section className="header">
+      <form action="">
+        <input
+          type="text"
+          value={price}
+          onChange={(e) => setPrice(inputComma(e.target.value))}
+        />
+      </form>
+      <Selectbox />
+    </section>
   );
 };
-
-function Header() {
-  return (
-    <>
-      <Input />
-      <Select options={OPTIONS} />
-    </>
-  );
-}
 
 export default Header;

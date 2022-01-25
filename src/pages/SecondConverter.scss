@@ -1,0 +1,19 @@
+$color-main: #8fa3ad;
+$color-second: #bfd4df;
+$color-third: #61747e;
+$color-fourth: #bdbdbd;
+$color-black: #000000;
+$color-white: #ffffff;
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: $color-second;
+  width: 500px;
+  height: 500px;
+}
