@@ -1,0 +1,32 @@
+@import '../../styles/colors';
+@import '../../styles/mixin';
+
+.wrapper {
+  width: 100%;
+  .TabMenu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+
+    .submenu {
+      width: 100%;
+      display: inline-block;
+      border: 1px solid $color-black;
+      height: 30px;
+      font-weight: bold;
+    }
+    .submenu-focused {
+      border-bottom: none;
+    }
+  }
+}
+
+.Desc {
+  @include flexbox(row, center, center);
+  width: 500px;
+  height: 400px;
+  font-weight: bold;
+}
