@@ -86,7 +86,7 @@ function FirstConverter() {
           </div>
         </form>
       </div>
-      {data && (
+      {total && (
         <div className="converter-total">
           수취금액은
           {`${total} ${toCurrency}`}
