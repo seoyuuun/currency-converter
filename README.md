@@ -29,12 +29,24 @@ alert 창<br/>
 
 ### 2. Tab Select 전환기 (박서영, 양다혜)
 
+<br/>
+1000 이상 입력할 경우 자동적으로 '1,000'과 같이 변경
+<br/>
+<br/>
 <img src ="https://user-images.githubusercontent.com/58350897/151088039-12fa6431-ffc7-49e7-8040-3505100a00e4.gif">
-
-<br>
-
-<img src="https://user-images.githubusercontent.com/58350897/151088116-c83040f1-afd1-4242-875e-0287b85ccbe1.gif">
-
+<br/>
+<br/>
+탭 메뉴 클릭 시 환율 타이틀 및 기준일 정보 동기화 변경 <br/>
+(양국 간 환율 정보 API 연결에 실패해 탭 메뉴 클릭시 USD/국가 정보 동기화로 축소 구현)
+<br/>
+<br/>
+<img src="https://user-images.githubusercontent.com/93420227/151109528-1030c300-c30c-4515-ab3e-338f184cae0f.gif">
+<br/>
+<br/>
+드롭다운 메뉴 선택할 경우, 탭 title을 선택한 값을 제외하고 메뉴 자동 생성
+<br/>
+<br/>
+<img src="https://user-images.githubusercontent.com/93420227/151110103-8163c0b4-1cec-4493-9b77-f52ca9a7dca4.gif">
 <br/>
 
 ## 과제 구현 목록
