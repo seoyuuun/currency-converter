@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { optionObject } from './optionObject';
-import './Tab.scss';
-import Contents from './Contents';
+import React, { useState } from "react";
+import { optionObject } from "./optionObject";
+import "./Tab.scss";
+import Contents from "./Contents";
 
 function Tab({ keyword, total, setOption }) {
   const [currentTab, setCurrentTab] = useState(0);
 
-  const test = 'USD';
+  const test = "USD";
 
   const selectMenuHandler = (index, title) => {
     console.log(index);
@@ -20,12 +20,12 @@ function Tab({ keyword, total, setOption }) {
       <ul className="TabMenu">
         {optionObject.map((el, index) => {
           if (`${el.title}` !== `${keyword}`) {
-            console.log('진입');
+            console.log("진입");
             return (
               <li
                 key={index}
                 className={`${
-                  index === currentTab ? 'submenu focused' : 'submenu'
+                  index === currentTab ? "submenu focused" : "submenu"
                 }`}
                 onClick={() => selectMenuHandler(index, el.title)}
               >

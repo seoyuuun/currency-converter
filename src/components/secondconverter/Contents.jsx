@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { formatDate } from '../../utils/date';
+import React from "react";
+import { formatDate } from "../../utils/date";
+// import './Contents.scss';
 
 const Contents = ({ title, total }) => {
   const today = formatDate();
