@@ -16,9 +16,13 @@ https://
 
 ### 1. Select Box 전환기 (민지연, 박서윤)
 
-<img src="https://user-images.githubusercontent.com/53133662/151083076-0cad58cc-a165-47fb-a38b-8590f1ab2813.gif">
+- 구현 영상
+  <img src="https://user-images.githubusercontent.com/53133662/151083076-0cad58cc-a165-47fb-a38b-8590f1ab2813.gif">
 
----
+- alert 창
+  <img src="https://user-images.githubusercontent.com/53133662/151083796-51247a9a-ecad-45f0-b104-4d31f15719bb.png">
+
+- ***
 
 ## 과제 구현 목록
 
@@ -30,6 +34,7 @@ https://
 - 송금액 input창에 조건에 부합하지 않는 값 입력 시, 팝업창 출력
 - Submit을 누르면 수취금액이 KRW, JPY, PHP 중 하나로 계산, 결과값 출력
 - utils 활용해 환율과 수취금액 소숫점 2째자리까지, 3자리 이상 되면 콤마(,) 처리
+- 수취금액을 입력하지 않거나, 0보다 작은 금액이거나 10,000 USD보다 큰 금액, 혹은 바른 숫자가 아니라면 “송금액이 바르지 않습니다"라는 에러 메시지를 alert 창으로 띄우도록 처리
 
 ### 2. Tab Select 전환기 (박서영, 양다혜)
 
