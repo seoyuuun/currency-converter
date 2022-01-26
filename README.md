@@ -16,13 +16,13 @@ https://
 
 ### 1. Select Box 전환기 (민지연, 박서윤)
 
-- 구현 영상
-  <img src="https://user-images.githubusercontent.com/53133662/151083076-0cad58cc-a165-47fb-a38b-8590f1ab2813.gif">
+구현 영상
 
-- alert 창
-  <img src="https://user-images.githubusercontent.com/53133662/151083796-51247a9a-ecad-45f0-b104-4d31f15719bb.png">
+<img src="https://user-images.githubusercontent.com/53133662/151083076-0cad58cc-a165-47fb-a38b-8590f1ab2813.gif">
 
-- ***
+alert 창
+
+<img src="https://user-images.githubusercontent.com/53133662/151083796-51247a9a-ecad-45f0-b104-4d31f15719bb.png">
 
 ## 과제 구현 목록
 
