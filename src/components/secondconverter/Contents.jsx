@@ -1,6 +1,6 @@
-import React from "react";
-import { formatDate } from "../../utils/date";
-// import './Contents.scss';
+import React from 'react';
+import { formatDate } from '../../utils/date';
+import './Contents.scss';
 
 const Contents = ({ title, total }) => {
   const today = formatDate();
@@ -9,8 +9,7 @@ const Contents = ({ title, total }) => {
     <section className="contents">
       <header>
         <h3>
-          {title}
-          {total}20000
+          {title} 환율 :{total}
         </h3>
       </header>
       <section>
