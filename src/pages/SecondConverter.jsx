@@ -12,7 +12,7 @@ const SecondConverterPage = () => {
   const [option, setOption] = useState('CAD');
   const [exchangeRateDict, setExchangeRateDict] = useState(null);
 
-  const exchangeRate = exchangeRateDict && exchangeRateDict[`USD${keyword}`]; // USDKRW
+  const exchangeRate = exchangeRateDict && exchangeRateDict[`USD${option}`]; 
 
   // hooks
   const { data } = useData();
@@ -23,29 +23,32 @@ const SecondConverterPage = () => {
   }, [data]);
   function handleKeyword(e) {
     setKeyword((i) => (i = e));
-    handleToAmountChange();
   }
   // 1. 환율 업데이트
   useEffect(() => {
     setExchangeRateDict(data);
-  }, [keyword]);
+  }, [option]);
 
   const handleToAmountChange = () => {
     const calculate = input * exchangeRate;
     if (input === '' || input < 0 || input % 1 !== 0) {
-      // 바른 숫자가 아니라면 <= 조건식 추가하기
       alert('송금액이 바르지 않습니다.');
     } else {
       const result = addComma(calculate);
-      setTotal(result);
+      result==="NaN" ? setTotal("Load..") : setTotal(result);
+
     }
   };
-
   return (
     <section className="wrap">
       <section className="container">
         <Header handleKeyword={handleKeyword} setInput={setInput}></Header>
-        <Tab keyword={keyword} setOption={setOption} total={total}></Tab>
+        <Tab
+          keyword={keyword}
+          setOption={setOption}
+          total={total}
+          handleChange={handleToAmountChange}
+        ></Tab>
       </section>
     </section>
   );
