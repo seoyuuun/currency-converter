@@ -14,6 +14,10 @@ https://
 
 ## 기능별 영상
 
+### 1. Select Box 전환기 (민지연, 박서윤)
+
+<img src="https://user-images.githubusercontent.com/53133662/151083076-0cad58cc-a165-47fb-a38b-8590f1ab2813.gif">
+
 ---
 
 ## 과제 구현 목록
