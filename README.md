@@ -1,4 +1,4 @@
-# 💵Currency Exchange Converter
+# 💵 Currency Exchange Converter
 
 ## 프로젝트 소개
 
@@ -6,8 +6,8 @@ currencylayer API를 활용하여 Select Box 전환기와 Tab Select 전환기, 
 
 ## 팀원 소개
 
-🏃‍♂️ 민지연, 박서윤 : 1번 Select Box Converter 구현 <br/>
-🏃‍♀️ 박서영, 양다혜 : 2번 Tab Select Converter 구현
+🏃‍♂️ [민지연](https://github.com/ichbinmin2), [박서윤](https://github.com/seoyuuun) : 1번 Select Box Converter 구현 <br/>
+🏃‍♀️ [박서영](https://github.com/ongddree), [양다혜](https://github.com/dahye-program) : 2번 Tab Select Converter 구현
 
 ## 배포 주소
 
@@ -17,14 +17,19 @@ currencylayer API를 활용하여 Select Box 전환기와 Tab Select 전환기, 
 
 ### 1. Select Box 전환기 (민지연, 박서윤)
 
-구현 영상<br/>
-
+<br/>
+실시간으로 currencylayer API data를 받아온 뒤 select 된 option 값(나라)에 따른 환율값 실시간 변동 구현
+<br/>
+utils 활용해 환율과 수취금액 소숫점 2째자리까지, 3자리 이상 되면 콤마(,) 처리
+<br/>
+<br/>
 <img src="https://user-images.githubusercontent.com/53133662/151083076-0cad58cc-a165-47fb-a38b-8590f1ab2813.gif">
-
-alert 창<br/>
-
+<br/>
+<br/>
+조건식에 따른 input 값이 올바르지 않을 경우 “송금액이 바르지 않습니다"라는 에러 메시지를 alert 창으로 띄우도록 처리
+<br/>
+<br/>
 <img src="https://user-images.githubusercontent.com/53133662/151083796-51247a9a-ecad-45f0-b104-4d31f15719bb.png">
-
 <br/>
 
 ### 2. Tab Select 전환기 (박서영, 양다혜)
@@ -53,20 +58,33 @@ alert 창<br/>
 
 ### 1. Select Box 전환기 (민지연, 박서윤)
 
-- currencylayer API 데이터를 실시간으로 활용
-- select box에서 option 값 선택해 저장
-- 수취국가에 따라 하단 환율값 변동
-- 송금액 input창에 조건에 부합하지 않는 값 입력 시, 팝업창 출력
-- Submit을 누르면 수취금액이 KRW, JPY, PHP 중 하나로 계산, 결과값 출력
-- utils 활용해 환율과 수취금액 소숫점 2째자리까지, 3자리 이상 되면 콤마(,) 처리
-- 수취금액을 입력하지 않거나, 0보다 작은 금액이거나 10,000 USD보다 큰 금액, 혹은 바른 숫자가 아니라면 “송금액이 바르지 않습니다"라는 에러 메시지를 alert 창으로 띄우도록 처리
+☑️ currencylayer API 데이터를 실시간으로 활용
+
+☑️ select box에서 option 값 선택해 저장
+
+☑️ 수취국가에 따라 하단 환율값 변동
+
+☑️ 송금액 input창에 조건에 부합하지 않는 값 입력 시, 팝업창 출력
+
+☑️ Submit을 누르면 수취금액이 KRW, JPY, PHP 중 하나로 계산, 결과값 출력
+
+☑️ utils 활용해 환율과 수취금액 소숫점 2째자리까지, 3자리 이상 되면 콤마(,) 처리
+
+☑️ 수취금액을 입력하지 않거나, 0보다 작은 금액이거나 10,000 USD보다 큰 금액, 혹은 바른 숫자가 아니라면 “송금액이 바르지 않습니다"라는 에러 메시지를 alert 창으로 띄우도록 처리
+
+<br/>
 
 ### 2. Tab Select 전환기 (박서영, 양다혜)
 
-- 유저값 input창에 숫자만 입력 가능
-- 유저값 input창에 1000 이상을 입력할 경우 자동적으로 “1,000”와 같이 변경
-- 드롭다운 메뉴를 선택할 경우, 탭 title을 선택한 값을 제외하고 “USD”로 생성
-- 사용자의 수치 입력 혹은 드롭다운 메뉴를 이용한 통화 변경시 변경될 환율 타이틀, 기준일 정보 동기화 변경
+☑️ 유저값 input창에 숫자만 입력 가능
+
+☑️ 유저값 input창에 1000 이상을 입력할 경우 자동적으로 “1,000”와 같이 변경
+
+☑️ 드롭다운 메뉴를 선택할 경우, 탭 title을 선택한 값을 제외하고 “USD”로 생성
+
+☑️ 사용자의 수치 입력 혹은 드롭다운 메뉴를 이용한 통화 변경시 변경될 환율 타이틀, 기준일 정보 동기화 변경
+
+<br/>
 
 ## 프로젝트 구조 설명
 
@@ -92,21 +110,23 @@ alert 창<br/>
 
 ````
 
+<br/>
+
 ## 설치 및 시작하는 법
 
-#프로젝트 클론
+**프로젝트 클론**
 
 ```
 $ git clone https://github.com/On-Basic/currency-converter.git
 ```
 
-#패키지 설치
+**패키지 설치**
 
 ```
 $ npm install
 ```
 
-#서버 실행
+**서버 실행**
 
 ```
 $ npm start
