@@ -29,7 +29,11 @@ alert 창<br/>
 
 ### 2. Tab Select 전환기 (박서영, 양다혜)
 
-<img src ="https://user-images.githubusercontent.com/58350897/151084527-8bbef6a7-3157-4591-8150-2f8d16a3c8e7.gif">
+<img src ="https://user-images.githubusercontent.com/58350897/151088039-12fa6431-ffc7-49e7-8040-3505100a00e4.gif">
+
+<br>
+
+<img src="https://user-images.githubusercontent.com/58350897/151088116-c83040f1-afd1-4242-875e-0287b85ccbe1.gif">
 
 <br/>
 
