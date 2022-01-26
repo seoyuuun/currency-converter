@@ -10,38 +10,30 @@ const countryToCurrencyDict = {
 };
 
 function FirstConverter() {
-  // input에 숫자만 담는 state
   const [inputs, setInputs] = useState("");
-  // select 나라 옵션
   const [countryOption, setCoutryOption] = useState("한국");
-  // 수취 국가 통화 단위
   const toCurrency = countryToCurrencyDict[countryOption]; // KRW
-  // 환율
   const [exchangeRateDict, setExchangeRateDict] = useState(null);
   const exchangeRate = exchangeRateDict && exchangeRateDict[`USD${toCurrency}`]; // USDKRW
+  const [total, setTotal] = useState("");
+
   // hooks
   const { data } = useData();
-
-  // 총 계산값
-  const [total, setTotal] = useState("");
 
   const selectHandler = (e) => {
     setCoutryOption(e.target.value);
     setTotal("");
   };
 
-  // 0. data를 받아올 useEffect
   useEffect(() => {
     setExchangeRateDict(data);
   }, [data]);
 
-  // 1. 수취금액 계산 함수
   const handleToAmountChange = (e) => {
     e.preventDefault();
     const calculate = inputs * exchangeRate;
 
     if (inputs === "" || inputs < 0 || inputs > 10000 || inputs % 1 !== 0) {
-      // 바른 숫자가 아니라면 <= 조건식 추가하기
       alert("송금액이 바르지 않습니다.");
     } else {
       const result = addComma(calculate);
@@ -49,7 +41,6 @@ function FirstConverter() {
     }
   };
 
-  // 2. 수취금액 1000 단위로 끊어주는 정규식 함수
   const inputHandler = (e) => {
     const { value } = e.target;
     setInputs(value);

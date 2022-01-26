@@ -1,6 +1,6 @@
 import React from "react";
 import FirstConverter from "./pages/FirstConverter";
-import SecondConverter from "./pages/secondConverter";
+import SecondConverter from "./pages/SecondConverter";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
