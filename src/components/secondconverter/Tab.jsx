@@ -7,8 +7,6 @@ function Tab({ keyword, total, setOption }) {
   const [currentTab, setCurrentTab] = useState(0);
 
   const selectMenuHandler = (index, title) => {
-    console.log(index);
-    console.log({ keyword });
     setCurrentTab(index);
     setOption(title);
   };
