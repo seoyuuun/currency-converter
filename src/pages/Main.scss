@@ -1,0 +1,18 @@
+@import '../styles/colors';
+
+.Btnmode {
+  position: fixed;
+  display: block;
+  top: 50px;
+  left: 50px;
+  border:none;
+  background-color: $color-second;
+  padding:0 20px;
+  border-radius:15px;
+  font-weight:700;
+  font-size:20px;
+  line-height:40px;
+  color: $color-black;
+  height:40px;
+  z-index: 999;
+}
