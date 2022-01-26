@@ -77,3 +77,25 @@ alert 창
 ---
 
 ````
+
+---
+
+## 설치 및 시작하는 법
+
+#프로젝트 클론
+
+```
+$ git clone https://github.com/On-Basic/currency-converter.git
+```
+
+#패키지 설치
+
+```
+$ npm install
+```
+
+#서버 실행
+
+```
+$ npm start
+```
