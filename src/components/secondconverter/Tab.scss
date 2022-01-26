@@ -1,5 +1,5 @@
-@import "../../styles/colors";
-@import "../../styles/mixin";
+@import '../../styles/colors';
+@import '../../styles/mixin';
 
 .wrapper {
   width: 100%;
@@ -10,6 +10,7 @@
     list-style: none;
     cursor: pointer;
     display: flex;
+    text-align: center;
 
     .submenu {
       width: 100%;
@@ -18,13 +19,11 @@
       height: 30px;
       font-weight: bold;
     }
-    // .submenu-focused {
-    //   width: 100%;
-    //   border: none;
-    //   display: inline-block;
-    //   height: 30px;
-    //   font-weight: bold;
-    // }
+    .focused {
+      width: 100%;
+      border: none;
+      font-weight: bold;
+    }
   }
 }
 
