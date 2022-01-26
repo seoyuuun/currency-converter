@@ -4,11 +4,14 @@
 
 currencylayer API를 활용하여 Select Box 전환기와 Tab Select 전환기, 두 종류의 환율 전환기를 각각 동작하도록 구현하는 것을 목표로 하는 프로젝트입니다.
 
+## 팀원 소개
 
-## 배포 주소 
+🏃‍♂️ 민지연, 박서윤 : 1번 Select Box Converter 구현 <br/>
+🏃‍♀️ 박서영, 양다혜 : 2번 Tab Select Converter 구현
+
+## 배포 주소
+
 추후 추가 예정
-
----
 
 ## 기능별 영상
 
@@ -72,8 +75,6 @@ alert 창<br/>
 
 
 ````
-
----
 
 ## 설치 및 시작하는 법
 
