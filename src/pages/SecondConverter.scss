@@ -1,9 +1,4 @@
-$color-main: #8fa3ad;
-$color-second: #bfd4df;
-$color-third: #61747e;
-$color-fourth: #bdbdbd;
-$color-black: #000000;
-$color-white: #ffffff;
+@import '../styles/colors';
 
 .wrap {
   display: flex;
