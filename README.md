@@ -6,7 +6,7 @@ currencylayer API를 활용하여 Select Box 전환기와 Tab Select 전환기, 
 
 ## 팀원 소개
 
-🏃‍♂️ [민지연](https://github.com/ichbinmin2), [박서윤](https://github.com/seoyuuun) : 1번 Select Box Converter 구현 <br/>
+🏃‍♂️ [민지연](https://github.com/ichbinmin2), [박서윤](https://github.com/seoyuuun)(팀장) : 1번 Select Box Converter 구현 <br/>
 🏃‍♀️ [박서영](https://github.com/ongddree), [양다혜](https://github.com/dahye-program) : 2번 Tab Select Converter 구현
 
 ## 배포 주소
